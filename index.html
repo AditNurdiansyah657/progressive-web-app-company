@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="id" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Direktori perusahaan berbasis Google Sheets dengan blog terintegrasi — PWA responsif seluler" />
-  <meta name="theme-color" content="#0a0f1e" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="BizDir" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta name="description" content="Company directory base Google Sheets dengan integrated blog - PWA Responsif Seluler"/>
+  <meta name="theme-color" content="#0a0f1e"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="BizDir"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BizDirectory — Company Hub" />
-  <meta property="og:description" content="Direktori perusahaan modern dengan blog terintegrasi" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BizDirectory - Company Hub"/>
+  <meta property="og:description" content="Company directory modern dengan integrated blog"/>
+  <meta property="og:type" content="website"/>
 
   <title>BizDirectory — Company Hub</title>
-  <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="apple-touch-icon" href="icons/icon-192.png"/>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 
   <style>
     /* ══════════════════════════════════════════
@@ -1478,9 +1478,9 @@
     </div>
 
     <ul class="nav__links" role="list">
-      <li><button class="nav__link active" onclick="scrollToSection('directory')" aria-current="page">Direktori</button></li>
+      <li><button class="nav__link active" onclick="scrollToSection('directory')" aria-current="page">Directory</button></li>
       <li><button class="nav__link" onclick="scrollToSection('blog')">Blog</button></li>
-      <li><button class="nav__link" onclick="scrollToSection('settings')">Pengaturan</button></li>
+      <li><button class="nav__link" onclick="scrollToSection('settings')">Settings</button></li>
     </ul>
 
     <div class="nav__actions">
@@ -1489,13 +1489,13 @@
           <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
           <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
         </svg>
-        Segarkan
+        Refresh
       </button>
       <button class="install-btn" id="installBtn" aria-label="Install app">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
         </svg>
-        Pasang
+        Install
       </button>
     </div>
 
@@ -1506,15 +1506,15 @@
 
   <!-- Mobile menu -->
   <div class="nav__mobile" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-    <button class="nav__mobile-link active" onclick="scrollToSection('directory'); closeMobileMenu()">Direktori</button>
+    <button class="nav__mobile-link active" onclick="scrollToSection('directory'); closeMobileMenu()">Directory</button>
     <button class="nav__mobile-link" onclick="scrollToSection('blog'); closeMobileMenu()">Blog</button>
-    <button class="nav__mobile-link" onclick="scrollToSection('settings'); closeMobileMenu()">Pengaturan</button>
+    <button class="nav__mobile-link" onclick="scrollToSection('settings'); closeMobileMenu()">Settings</button>
   </div>
 
   <!-- ──────── HERO ──────── -->
   <section class="hero" id="home" aria-labelledby="hero-title">
     <div class="hero__eyebrow" aria-hidden="true">
-      <span></span>Direktori Perusahaan Berbasis Google Sheets<span></span>
+      <span></span>Company Directory Based on Google Sheets<span></span>
     </div>
     <h1 class="hero__title" id="hero-title">
       Temukan<br/>
@@ -1522,12 +1522,12 @@
       <span class="accent-line">Terbaik</span>
     </h1>
     <p class="hero__sub">
-      Direktori perusahaan dinamis yang disinkronkan langsung dari Google Sheets Anda —
-      dengan blog terintegrasi, pencarian real-time, dan pengalaman offline penuh.
+      Directory perusahaan dinamis yang disinkronkan langsung dari Google Sheets Anda —
+      dengan integrated blog, pencarian real-time, dan pengalaman offline penuh.
     </p>
     <div class="hero__cta">
-      <button class="btn-primary" onclick="scrollToSection('directory')">Jelajahi Direktori →</button>
-      <button class="btn-secondary" onclick="scrollToSection('settings')">Hubungkan Sheet</button>
+      <button class="btn-primary" onclick="scrollToSection('directory')">Jelajahi Directory →</button>
+      <button class="btn-secondary" onclick="scrollToSection('settings')">Connect Sheet</button>
     </div>
     <div class="hero__stats">
       <div class="stat">
@@ -1536,15 +1536,15 @@
       </div>
       <div class="stat">
         <span class="stat__value" id="statCategories">0</span>
-        <span class="stat__label">Kategori</span>
+        <span class="stat__label">Categories</span>
       </div>
       <div class="stat">
         <span class="stat__value" id="statPosts">0</span>
-        <span class="stat__label">Artikel Blog</span>
+        <span class="stat__label">Blog Posts</span>
       </div>
     </div>
     <div class="scroll-hint" aria-hidden="true">
-      <span>Gulir</span>
+      <span>Scroll</span>
       <div class="scroll-hint__line"></div>
     </div>
   </section>
@@ -1556,11 +1556,11 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M5.34 18.66l-1.41 1.41M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2"/>
         </svg>
-        Konfigurasi Google Sheets
+        Configurations Google Sheets
       </div>
       <div class="settings-form">
         <div class="input-group">
-          <label for="sheetUrl">URL Google Sheet (Publik / CSV Export)</label>
+          <label for="sheetUrl">URL Google Sheet (Public / CSV Export)</label>
           <input
             type="url"
             id="sheetUrl"
@@ -1569,11 +1569,11 @@
             autocomplete="url"
           />
         </div>
-        <button class="btn-load" onclick="loadFromSheet()">Muat Data</button>
+        <button class="btn-load" onclick="loadFromSheet()">Load Data</button>
       </div>
       <p style="margin-top:0.75rem; font-size:0.75rem; color:var(--text-muted);">
         💡 Pastikan Google Sheet diset ke <strong style="color:var(--text-secondary)">Siapa saja dengan tautan</strong>.
-        Format kolom: <code style="color:var(--gold); font-family:var(--font-mono);">nama, kategori, tagline, deskripsi, lokasi, website, logo, email, karyawan, tahun</code>
+        Format kolom: <code style="color:var(--gold); font-family:var(--font-mono);">name, category, tagline, description, location, website, logo, email, employees, year</code>
       </p>
     </div>
   </div>
@@ -1583,7 +1583,7 @@
   <section class="section" id="directory" aria-labelledby="dir-title">
     <div class="section__header">
       <div>
-        <div class="section__label">— Direktori</div>
+        <div class="section__label">— Directory</div>
         <h2 class="section__title" id="dir-title">Semua <em>Perusahaan</em></h2>
       </div>
       <span class="section__count" id="dirCount" aria-live="polite">— perusahaan</span>
@@ -1628,10 +1628,10 @@
   <section class="section" id="blog" aria-labelledby="blog-title">
     <div class="section__header">
       <div>
-        <div class="section__label">— Blog & Pembaruan</div>
-        <h2 class="section__title" id="blog-title">Berita <em>Terkini</em></h2>
+        <div class="section__label">— Blog & Updates</div>
+        <h2 class="section__title" id="blog-title">News <em>Latest</em></h2>
       </div>
-      <span class="section__count" id="blogCount" aria-live="polite">— artikel</span>
+      <span class="section__count" id="blogCount" aria-live="polite">— articles</span>
     </div>
     <div id="blogContainer" aria-live="polite">
       <!-- Populated by JS -->
@@ -1662,15 +1662,15 @@
         <p class="modal__desc" id="modalDesc">—</p>
         <div class="modal__grid">
           <div class="modal__field">
-            <div class="modal__field-label">Lokasi</div>
+            <div class="modal__field-label">Location</div>
             <div class="modal__field-value" id="modalLocation">—</div>
           </div>
           <div class="modal__field">
-            <div class="modal__field-label">Karyawan</div>
+            <div class="modal__field-label">Employees</div>
             <div class="modal__field-value" id="modalEmployees">—</div>
           </div>
           <div class="modal__field">
-            <div class="modal__field-label">Berdiri</div>
+            <div class="modal__field-label">Founded</div>
             <div class="modal__field-value" id="modalFounded">—</div>
           </div>
           <div class="modal__field">
@@ -1680,10 +1680,10 @@
         </div>
         <div class="modal__actions">
           <a id="modalWebsite" href="#" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;align-items:center;gap:0.4rem;">
-            Kunjungi Website
+            Visit Website
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
-          <button class="btn-secondary" onclick="closeModal('companyModal')">Tutup</button>
+          <button class="btn-secondary" onclick="closeModal('companyModal')">Close</button>
         </div>
       </div>
     </div>
@@ -1707,7 +1707,7 @@
           <span>·</span>
           <span id="blogModalDate">—</span>
           <span>·</span>
-          <span id="blogModalRead">5 mnt baca</span>
+          <span id="blogModalRead">5 min read</span>
         </div>
         <div class="blog-modal__body" id="blogModalBody"></div>
       </div>
