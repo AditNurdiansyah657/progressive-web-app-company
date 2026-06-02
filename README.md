@@ -95,25 +95,6 @@ Drag & drop folder ke [netlify.com/drop](https://netlify.com/drop) — selesai d
 
 ---
 
-## 📁 Struktur File
-
-```
-pwa-directory/
-├── index.html          ← Aplikasi utama (UI + JavaScript)
-├── manifest.json       ← PWA manifest (nama, ikon, warna)
-├── sw.js               ← Service Worker (caching, offline, sync)
-├── icons/
-│   ├── icon-72.png
-│   ├── icon-96.png
-│   ├── icon-128.png
-│   ├── icon-144.png
-│   ├── icon-192.png
-│   └── icon-512.png
-└── README.md
-```
-
----
-
 ## 🛠️ Kustomisasi
 
 ### Ubah Warna Tema
