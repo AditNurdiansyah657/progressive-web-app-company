@@ -32,13 +32,13 @@ https://progressive-web-app-company.vercel.app
 
 ### 1. Set Up Your Google Sheet
 
-**Sheet 1 — Company Directory** (any sheet name works)
+**Sheet 1 - Company Directory** (any sheet name works)
 
 | name | category | tagline | description | location | website | logo | email | employees | year |
 |------|----------|---------|-------------|----------|---------|------|-------|-----------|------|
 | Gojek | Technology | Leading super-app | Gojek is... | Jakarta | https://gojek.com | https://logo.clearbit.com/gojek.com | hi@gojek.com | 10,000+ | 2010 |
 
-**Sheet 2 — Blog** (optional, create a separate sheet)
+**Sheet 2 - Blog** (optional, create a separate sheet)
 
 | title | tag | author | date | excerpt | content | image |
 |-------|-----|--------|------|---------|---------|-------|
@@ -61,7 +61,7 @@ https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={GID}
 
 ### 3. Deploy the PWA
 
-**Option A — Local (Dev)**
+**Option A - Local (Dev)**
 ```bash
 # Install http-server globally
 npm install -g http-server
@@ -72,7 +72,7 @@ http-server -p 8080 --cors
 ```
 Open: `http://localhost:8080`
 
-**Option B — GitHub Pages (Free)**
+**Option B - GitHub Pages (Free)**
 ```bash
 git init
 git add .
@@ -82,7 +82,7 @@ git push -u origin main
 ```
 Enable GitHub Pages under Settings → Pages → Branch: main
 
-**Option C — Netlify / Vercel**
+**Option C - Netlify / Vercel**
 Drag & drop your project folder to [netlify.com/drop](https://netlify.com/drop) — live in 30 seconds!
 
 ### 4. Connect Your Sheet
@@ -125,9 +125,9 @@ Comment out the `loadDemoData()` call inside the `init()` function to prevent sa
 
 ## 🧑‍💻 Tech Stack
 
-- **HTML5** — Semantic markup, ARIA accessibility
-- **CSS3** — Custom Properties, Grid, Flexbox, Animations
-- **Vanilla JavaScript** — Zero dependencies, ES2020+
-- **Service Worker API** — Offline caching, background sync
-- **Web App Manifest** — Installable PWA
-- **Google Sheets CSV API** — Backend-free data source
+- **HTML5** - Semantic markup, ARIA accessibility
+- **CSS3** - Custom Properties, Grid, Flexbox, Animations
+- **Vanilla JavaScript** - Zero dependencies, ES2020+
+- **Service Worker API** - Offline caching, background sync
+- **Web App Manifest** - Installable PWA
+- **Google Sheets CSV API** - Backend-free data source
