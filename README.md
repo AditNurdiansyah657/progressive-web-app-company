@@ -7,8 +7,7 @@ A Progressive Web App that displays a card-style company directory sourced from 
 
 ## 🌐 Live Demo
 
-Online Version:
-https://progressive-web-app-company.vercel.app
+🔗 [Online Version](https://progressive-web-app-company.vercel.app)
 
 ---
 
