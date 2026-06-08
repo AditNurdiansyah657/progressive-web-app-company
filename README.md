@@ -1,148 +1,133 @@
 # BizDirectory PWA 🏢
-**Direktori Perusahaan Responsif Berbasis Google Sheets**
+**Responsive Company Directory Powered by Google Sheets**
 
-Progressive Web App yang menampilkan direktori perusahaan bergaya kartu dari Google Sheets, dilengkapi blog terintegrasi dan dukungan offline penuh.
+A Progressive Web App that displays a card-style company directory sourced from Google Sheets, complete with an integrated blog and full offline support.
 
 ---
 
 ## 🌐 Live Demo
 
-Online Version :  
+Online Version:
 https://progressive-web-app-company.vercel.app
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
-| Fitur | Keterangan |
-|-------|-----------|
-| 📊 Google Sheets Integration | Tarik data langsung dari CSV export Google Sheets |
-| 🃏 Card Directory | Kartu perusahaan dengan logo, kategori, filter & pencarian |
-| 📝 Blog Terintegrasi | Artikel dari Sheet kedua dengan modal reader |
-| 📱 Mobile-First PWA | Responsif penuh, installable, offline-capable |
-| 🔍 Real-time Search | Cari nama, kategori, lokasi secara instan |
-| 🗃️ Filter Kategori | Filter chip berdasarkan kategori perusahaan |
-| 🌐 Offline Support | Service Worker + caching strategi berlapis |
-| 🔔 Install Prompt | Banner install ke homescreen |
-| 🎨 Dark Theme | Desain editorial premium dark-mode |
+| Feature | Description |
+|---------|-------------|
+| 📊 Google Sheets Integration | Pull data directly from a Google Sheets CSV export |
+| 🃏 Card Directory | Company cards with logos, categories, filters & search |
+| 📝 Integrated Blog | Articles from a second sheet with a modal reader |
+| 📱 Mobile-First PWA | Fully responsive, installable, and offline-capable |
+| 🔍 Real-time Search | Instantly search by name, category, or location |
+| 🗃️ Category Filters | Filter chips based on company categories |
+| 🌐 Offline Support | Service Worker with multi-layer caching strategy |
+| 🔔 Install Prompt | Add-to-homescreen install banner |
+| 🎨 Dark Theme | Premium editorial dark-mode design |
 
 ---
 
-## 🚀 Cara Penggunaan
+## 🚀 Getting Started
 
-### 1. Siapkan Google Sheet
+### 1. Set Up Your Google Sheet
 
-**Sheet 1 — Direktori Perusahaan** (nama sheet bebas)
+**Sheet 1 — Company Directory** (any sheet name works)
 
-| nama | kategori | tagline | deskripsi | lokasi | website | logo | email | karyawan | tahun |
-|------|----------|---------|-----------|--------|---------|------|-------|----------|-------|
-| Gojek | Teknologi | Super-app terdepan | Gojek adalah... | Jakarta | https://gojek.com | https://logo.clearbit.com/gojek.com | hi@gojek.com | 10,000+ | 2010 |
+| name | category | tagline | description | location | website | logo | email | employees | year |
+|------|----------|---------|-------------|----------|---------|------|-------|-----------|------|
+| Gojek | Technology | Leading super-app | Gojek is... | Jakarta | https://gojek.com | https://logo.clearbit.com/gojek.com | hi@gojek.com | 10,000+ | 2010 |
 
-**Sheet 2 — Blog** (opsional, buat sheet terpisah)
+**Sheet 2 — Blog** (optional, create a separate sheet)
 
-| judul | tag | penulis | tanggal | excerpt | konten | gambar |
-|-------|-----|---------|---------|---------|--------|--------|
-| Tren AI 2025 | Teknologi | Budi | 10 Apr 2025 | Ringkasan singkat... | Isi artikel lengkap... | https://... |
+| title | tag | author | date | excerpt | content | image |
+|-------|-----|--------|------|---------|---------|-------|
+| AI Trends 2025 | Technology | Budi | Apr 10 2025 | A brief summary... | Full article content... | https://... |
 
-### 2. Publish Google Sheet
+### 2. Publish Your Google Sheet
 
-1. Buka Google Sheets → **File → Share → Bagikan ke semua orang yang memiliki tautan**
-2. Klik **File → Bagikan → Publikasikan ke web → CSV** → Salin URL
+1. Open Google Sheets → **File → Share → Share with anyone who has the link**
+2. Click **File → Share → Publish to the web → CSV** → Copy the URL
 
-Format URL CSV Export:
+CSV export URL format:
 ```
 https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv
 ```
 
-Untuk sheet tertentu (gid):
+For a specific sheet (gid):
 ```
 https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid={GID}
 ```
 
-### 3. Deploy PWA
+### 3. Deploy the PWA
 
-**Opsi A — Lokal (Dev)**
+**Option A — Local (Dev)**
 ```bash
-# Instal http-server global
+# Install http-server globally
 npm install -g http-server
 
-# Jalankan dari folder proyek
-cd progressive web app
+# Run from your project folder
+cd progressive-web-app
 http-server -p 8080 --cors
 ```
+Open: `http://localhost:8080`
 
-Buka: `http://localhost:8080`
-
-**Opsi B — GitHub Pages (Gratis)**
+**Option B — GitHub Pages (Free)**
 ```bash
 git init
-git add  .
+git add .
 git commit -m "Initial BizDirectory PWA"
 git remote add origin https://github.com/username/biz-directory.git
 git push -u origin main
 ```
-Aktifkan GitHub Pages di Settings → Pages → Branch: main
+Enable GitHub Pages under Settings → Pages → Branch: main
 
-**Opsi C — Netlify / Vercel**
-Drag & drop folder ke [netlify.com/drop](https://netlify.com/drop) — selesai dalam 30 detik!
+**Option C — Netlify / Vercel**
+Drag & drop your project folder to [netlify.com/drop](https://netlify.com/drop) — live in 30 seconds!
 
-### 4. Hubungkan Sheet
+### 4. Connect Your Sheet
 
-1. Buka aplikasi
-2. Masukkan URL CSV Sheet di panel **Pengaturan**
-3. Klik **Muat Data**
-4. Selesai! Data tersinkron otomatis
+1. Open the app
+2. Enter your CSV sheet URL in the **Settings** panel
+3. Click **Load Data**
+4. Done! Data syncs automatically
 
 ---
 
-## 🛠️ Kustomisasi
+## 🛠️ Customization
 
-### Ubah Warna Tema
-Edit CSS variables di `index.html`:
+### Change the Theme Colors
+
+Edit the CSS variables in `index.html`:
 ```css
 :root {
-  --gold:   #c9a84c;   /* Warna aksen utama */
-  --teal:   #2dd4c0;   /* Warna kategori */
-  --bg-base: #0a0f1e;  /* Background gelap */
+  --gold:    #c9a84c;  /* Primary accent color */
+  --teal:    #2dd4c0;  /* Category color */
+  --bg-base: #0a0f1e;  /* Dark background */
 }
 ```
 
-### Tambah Kolom Kustom
-Di fungsi `loadData()` pada script, tambahkan mapping kolom baru:
+### Add Custom Columns
+
+In the `loadData()` function in the script, add a new column mapping:
 ```js
 const companies = rows.map(r => ({
   ...
-  namaKolom: r.nama_kolom_di_sheet || '',
+  customField: r.your_column_name || '',
 }));
 ```
 
-### Nonaktifkan Demo Data
-Komentari baris `loadDemoData()` di fungsi `init()` agar tidak menampilkan data contoh.
+### Disable Demo Data
+
+Comment out the `loadDemoData()` call inside the `init()` function to prevent sample data from being displayed.
 
 ---
 
-## 🧑‍💻 Teknologi
+## 🧑‍💻 Tech Stack
 
 - **HTML5** — Semantic markup, ARIA accessibility
 - **CSS3** — Custom Properties, Grid, Flexbox, Animations
 - **Vanilla JavaScript** — Zero dependencies, ES2020+
 - **Service Worker API** — Offline caching, background sync
 - **Web App Manifest** — Installable PWA
-- **Google Sheets CSV API** — Data source tanpa backend
-
----
-
-## 📊 Skor Lighthouse (Expected)
-
-| Metrik | Skor |
-|--------|------|
-| Performance | 95+ |
-| Accessibility | 95+ |
-| Best Practices | 100 |
-| SEO | 95+ |
-| PWA | ✅ Installable |
-
----
-
-## 📄 Lisensi
-MIT License — Bebas digunakan untuk proyek komersial maupun personal.
+- **Google Sheets CSV API** — Backend-free data source
