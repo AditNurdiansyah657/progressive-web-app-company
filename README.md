@@ -1,4 +1,4 @@
-# BizDirectory PWA 🏢
+# BizDirectory PWA
 
 ## Project Overview
 
