@@ -17,6 +17,8 @@ data integration with browser PWA capabilities such as a Web App
 Manifest, Service Worker, caching strategies, background
 synchronization, install prompts, and online/offline status detection.
 
+## 🔗 [Online Version](https://progressive-web-app-company.vercel.app)
+
 ## Main Features
 
 -   **Google Sheets Integration** Loads company data from a public
